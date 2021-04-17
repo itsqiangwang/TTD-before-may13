@@ -1,36 +1,67 @@
-// let d = new Date();
-// let year = d.getFullYear() - 2000;
-// let month = d.getMonth() + 1;
-// let date = d.getDate();
-// let hour = d.getHours();
-// let minute = d.getMinutes();
-// let second = d.getSeconds();
-
+//analog clock + components
+let analogClock = document.getElementById('clock-analog');
 let hourArm = document.getElementById('clock-arm-hour');
 let minuteArm = document.getElementById('clock-arm-minute');
 let secondArm = document.getElementById('clock-arm-second');
+let knob = document.getElementById('clock-knob');
+
+//buttons
 let infoButton = document.getElementById('info-button');
 let watchButton = document.getElementById('watch-button');
 let titleButton = document.getElementById('title-button');
+
+//info page
 let infoPage = document.getElementById('info-page');
-let analogClock = document.getElementById('clock-analog');
+
+//hide on info page
 let digitalClock = document.getElementById('clock-digital');
 let videos = document.getElementById('videos');
 
+//show on info page
+let clockToggleHide = document.getElementById('toggle-button-hide');
+let clockToggleShow = document.getElementById('toggle-button-show');
+
+////////////////////////////////////////////////////////////////////
+
+//when info button is clicked
 infoButton.onclick = function(){
     digitalClock.style.display = 'none';
     videos.style.display = 'none';
+    knob.style.display = 'none';
     infoPage.style.display = 'block';
-    // analogClock.style.opacity = '0.5';
+    clockToggleHide.style.display = 'block';
 }
 
+//when toggle hide button is clicked
+clockToggleHide.onclick = function(){
+    hourArm.style.display = 'none';
+    minuteArm.style.display = 'none';
+    secondArm.style.display = 'none';
+    clockToggleHide.style.display = 'none';
+    clockToggleShow.style.display = 'block';
+}
+
+//when toggle show button is clicked
+clockToggleShow.onclick = function(){
+    hourArm.style.display = 'block';
+    minuteArm.style.display = 'block';
+    secondArm.style.display = 'block';
+    clockToggleHide.style.display = 'block';
+    clockToggleShow.style.display = 'none';
+}
+
+//when title (home) button is clicked
 titleButton.onclick = function(){
     digitalClock.style.display = 'block';
     videos.style.display = 'flex';
+    analogClock.style.display = 'block';
+    knob.style.display = 'block';
     infoPage.style.display = 'none';
-    // analogClock.style.opacity = '1';
+    clockToggleHide.style.display = 'none';
+    clockToggleShow.style.display = 'none';
 }
 
+// function to animate analog clock
 function clockAnlog() {
     let d = new Date();
     let hour = d.getHours();
@@ -66,6 +97,8 @@ function clockAnlog() {
 }
 setInterval(clockAnlog, 1);
 
+// function to animate digital clock
+
 let yearSpan = document.getElementById('year');
 let monthSpan = document.getElementById('month');
 let dateSpan = document.getElementById('date');
@@ -88,6 +121,7 @@ function clockDigital() {
     minuteSpan.textContent = ("0" + minute).substr(-2);
     secondSpan.textContent = ("0" + second).substr(-2);
 }
+// call after may 13 (live digital clock)
 // setInterval(clockDigital, 1);
 
 console.log('year:' + year);
