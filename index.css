@@ -164,11 +164,11 @@ thumbnails
     padding: 0;
     margin: 0;
     position: fixed;
-    /* border-radius: 100%; */
+    border-radius: 100%;
     border:1px solid rgb(15,15,15);
-    background-color: rgba(15,15,15,0.5);
-    height: 20vh;
-    width: 25vh;
+    background-color: rgba(15,15,15,0.25);
+    height: 25vh;
+    width: 30vh;
 }
 
 .videos figure:nth-of-type(1){
@@ -300,8 +300,8 @@ mobile + tablet view
 */
 @media only screen and (max-width:1024px) {
     .videos figure{
-        height: 15vh;
-        width: 20vh;
+        height: 20vh;
+        width: 25vh;
     }
 
 	.videos figure img{
