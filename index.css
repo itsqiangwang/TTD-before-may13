@@ -103,7 +103,14 @@ analog clock
     display: none;
 }
 
+.clock-analog .clock-toggle #toggle-button-hide,
+.clock-analog .clock-toggle #toggle-button-show{
+    align-items: center;
+    justify-content: center;
+}
+
 .clock-analog .clock-toggle #toggle-button-hide{
+    color: rgb(200,200,200);
     background-color: rgb(150,15,70);
 }
 
@@ -113,6 +120,7 @@ analog clock
 
 .clock-analog .clock-toggle #toggle-button-show{
     box-sizing: border-box;
+    color: rgb(15,15,15);
     border: 3px solid rgb(150,15,70);
 }
 
@@ -300,8 +308,8 @@ mobile + tablet view
 */
 @media only screen and (max-width:1024px) {
     .videos figure{
-        height: 20vh;
-        width: 25vh;
+        height: 15vh;
+        width: 20vh;
     }
 
 	.videos figure img{

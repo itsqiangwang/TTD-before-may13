@@ -29,7 +29,7 @@ infoButton.onclick = function(){
     videos.style.display = 'none';
     knob.style.display = 'none';
     infoPage.style.display = 'block';
-    clockToggleHide.style.display = 'block';
+    clockToggleHide.style.display = 'flex';
 }
 
 //when toggle hide button is clicked
@@ -38,7 +38,7 @@ clockToggleHide.onclick = function(){
     minuteArm.style.display = 'none';
     secondArm.style.display = 'none';
     clockToggleHide.style.display = 'none';
-    clockToggleShow.style.display = 'block';
+    clockToggleShow.style.display = 'flex';
 }
 
 //when toggle show button is clicked
@@ -46,7 +46,7 @@ clockToggleShow.onclick = function(){
     hourArm.style.display = 'block';
     minuteArm.style.display = 'block';
     secondArm.style.display = 'block';
-    clockToggleHide.style.display = 'block';
+    clockToggleHide.style.display = 'flex';
     clockToggleShow.style.display = 'none';
 }
 
