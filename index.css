@@ -358,8 +358,8 @@ mobile + tablet view
     }
 
     .clock-analog .clock-knob{
-        width: 12pt;
-        height: 10pt;
+        width: 11pt;
+        height: 9.75pt;
     }
 
     .info-page details summary,
