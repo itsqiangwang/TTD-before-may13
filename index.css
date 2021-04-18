@@ -49,10 +49,6 @@ analog clock
     z-index: 2;
 }
 
-.clock-analog:hover{
-    opacity: 1 !important;
-}
-
 .clock-analog .clock-knob{
     width: 16pt;
     height: 15pt;
