@@ -61,32 +61,32 @@ analog clock
 }
 
 .clock-analog .clock-arm-hour{
-    width: 16vw;
+    width: 14vw;
     height: 6px;
     background-color: rgb(25,25,15);
     position: fixed;
     top: 50%;
-    left: 58%;
+    left: 57%;
     transform-origin: left;
 }
 
 .clock-analog .clock-arm-minute{
-    width: 20vw;
+    width: 18vw;
     height: 4px;
     background-color: rgb(25,25,15);
     position: fixed;
     top: 50%;
-    left: 60%;
+    left: 59%;
     transform-origin: left;
 }
 
 .clock-analog .clock-arm-second{
-    width: 24vw;
+    width: 22vw;
     height: 2px;
     background-color: rgb(25,25,15);
     position: fixed;
     top: 50%;
-    left: 62%;
+    left: 61%;
     transform-origin: left;
 }
 
