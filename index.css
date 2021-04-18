@@ -49,6 +49,10 @@ analog clock
     z-index: 2;
 }
 
+.clock-analog:hover{
+    opacity: 1 !important;
+}
+
 .clock-analog .clock-knob{
     width: 16pt;
     height: 15pt;
@@ -101,9 +105,7 @@ analog clock
     white-space: nowrap;
 }
 
-.clock-analog .clock-toggle div{
-    /* width: 16pt;
-    height: 15pt; */
+/* .clock-analog .clock-toggle div{
     border-radius: 100%;
     padding: 5pt;
     position: fixed;
@@ -135,7 +137,7 @@ analog clock
 
 .clock-analog .clock-toggle #toggle-button-show:hover{
     background-color: rgb(25,25,15);
-}
+} */
 
 .clock-analog .button,
 .clock-analog a{
@@ -357,6 +359,11 @@ mobile + tablet view
     .clock-analog .clock-arm-second{
         width: 36vw;
         left: 68%;
+    }
+
+    .clock-analog .clock-knob{
+        width: 12pt;
+        height: 10pt;
     }
 
     .info-page details summary,

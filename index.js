@@ -3,7 +3,7 @@ let analogClock = document.getElementById('clock-analog');
 let hourArm = document.getElementById('clock-arm-hour');
 let minuteArm = document.getElementById('clock-arm-minute');
 let secondArm = document.getElementById('clock-arm-second');
-let knob = document.getElementById('clock-knob');
+// let knob = document.getElementById('clock-knob');
 
 //buttons
 let infoButton = document.getElementById('info-button');
@@ -18,50 +18,50 @@ let digitalClock = document.getElementById('clock-digital');
 let videos = document.getElementById('videos');
 
 //show on info page
-let clockToggleHide = document.getElementById('toggle-button-hide');
-let clockToggleShow = document.getElementById('toggle-button-show');
+// let clockToggleHide = document.getElementById('toggle-button-hide');
+// let clockToggleShow = document.getElementById('toggle-button-show');
 
 ////////////////////////////////////////////////////////////////////
 
 //when info button is clicked
 infoButton.onclick = function(){
     digitalClock.style.display = 'none';
-    analogClock.style.opacity = '1';
+    analogClock.style.opacity = '0.5';
     videos.style.display = 'none';
-    knob.style.display = 'none';
+    // knob.style.display = 'none';
     infoPage.style.display = 'block';
-    clockToggleHide.style.display = 'flex';
+    // clockToggleHide.style.display = 'flex';
     infoButton.classList.add('current-page');
     titleButton.classList.remove('current-page');
 }
 
 //when toggle hide button is clicked
-clockToggleHide.onclick = function(){
-    hourArm.style.display = 'none';
-    minuteArm.style.display = 'none';
-    secondArm.style.display = 'none';
-    clockToggleHide.style.display = 'none';
-    clockToggleShow.style.display = 'flex';
-}
+// clockToggleHide.onclick = function(){
+//     hourArm.style.display = 'none';
+//     minuteArm.style.display = 'none';
+//     secondArm.style.display = 'none';
+//     clockToggleHide.style.display = 'none';
+//     clockToggleShow.style.display = 'flex';
+// }
 
 //when toggle show button is clicked
-clockToggleShow.onclick = function(){
-    hourArm.style.display = 'block';
-    minuteArm.style.display = 'block';
-    secondArm.style.display = 'block';
-    clockToggleHide.style.display = 'flex';
-    clockToggleShow.style.display = 'none';
-}
+// clockToggleShow.onclick = function(){
+//     hourArm.style.display = 'block';
+//     minuteArm.style.display = 'block';
+//     secondArm.style.display = 'block';
+//     clockToggleHide.style.display = 'flex';
+//     clockToggleShow.style.display = 'none';
+// }
 
 //when title (home) button is clicked
 titleButton.onclick = function(){
     digitalClock.style.display = 'block';
     videos.style.display = 'flex';
     analogClock.style.display = 'block';
-    knob.style.display = 'block';
+    // knob.style.display = 'block';
     infoPage.style.display = 'none';
-    clockToggleHide.style.display = 'none';
-    clockToggleShow.style.display = 'none';
+    // clockToggleHide.style.display = 'none';
+    // clockToggleShow.style.display = 'none';
     infoButton.classList.remove('current-page');
     titleButton.classList.add('current-page');
     analogClock.style.opacity = '1';
