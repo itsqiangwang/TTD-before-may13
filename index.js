@@ -26,10 +26,13 @@ let clockToggleShow = document.getElementById('toggle-button-show');
 //when info button is clicked
 infoButton.onclick = function(){
     digitalClock.style.display = 'none';
+    analogClock.style.opacity = '1';
     videos.style.display = 'none';
     knob.style.display = 'none';
     infoPage.style.display = 'block';
     clockToggleHide.style.display = 'flex';
+    infoButton.classList.add('current-page');
+    titleButton.classList.remove('current-page');
 }
 
 //when toggle hide button is clicked
@@ -59,6 +62,9 @@ titleButton.onclick = function(){
     infoPage.style.display = 'none';
     clockToggleHide.style.display = 'none';
     clockToggleShow.style.display = 'none';
+    infoButton.classList.remove('current-page');
+    titleButton.classList.add('current-page');
+    analogClock.style.opacity = '1';
 }
 
 // function to animate analog clock

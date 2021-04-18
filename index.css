@@ -1,6 +1,6 @@
 /*
 150,15,70 - tdd magenta
-15, 15, 15 - tdd darkgrey
+25, 25, 15 - tdd darkgreen
 200, 200, 200 - tdd lightgrey
 */
 
@@ -24,8 +24,17 @@ a,
 a:hover,
 .button:hover{
     opacity: 0.5;
-    color: rgb(15,15,15);
+    color: rgb(25,25,15);
     cursor: pointer;
+}
+
+.current-page{
+    color: rgb(25,25,15) !important;
+}
+
+.current-page:hover{
+    opacity: 1 !important;
+    cursor: text !important;
 }
 
 /*
@@ -44,7 +53,7 @@ analog clock
     width: 16pt;
     height: 15pt;
     border-radius: 100%;
-    background-color: rgb(15,15,15);
+    background-color: rgb(25,25,15);
     position: fixed;
     top: 50%;
     left: 50%;
@@ -54,7 +63,7 @@ analog clock
 .clock-analog .clock-arm-hour{
     width: 16vw;
     height: 6px;
-    background-color: rgb(15,15,15);
+    background-color: rgb(25,25,15);
     position: fixed;
     top: 50%;
     left: 58%;
@@ -64,7 +73,7 @@ analog clock
 .clock-analog .clock-arm-minute{
     width: 20vw;
     height: 4px;
-    background-color: rgb(15,15,15);
+    background-color: rgb(25,25,15);
     position: fixed;
     top: 50%;
     left: 60%;
@@ -74,7 +83,7 @@ analog clock
 .clock-analog .clock-arm-second{
     width: 24vw;
     height: 2px;
-    background-color: rgb(15,15,15);
+    background-color: rgb(25,25,15);
     position: fixed;
     top: 50%;
     left: 62%;
@@ -93,9 +102,10 @@ analog clock
 }
 
 .clock-analog .clock-toggle div{
-    width: 16pt;
-    height: 15pt;
+    /* width: 16pt;
+    height: 15pt; */
     border-radius: 100%;
+    padding: 5pt;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -115,17 +125,16 @@ analog clock
 }
 
 .clock-analog .clock-toggle #toggle-button-hide:hover{
-    background-color: rgb(15,15,15);
+    background-color: rgb(25,25,15);
 }
 
 .clock-analog .clock-toggle #toggle-button-show{
-    box-sizing: border-box;
-    color: rgb(15,15,15);
-    border: 3px solid rgb(150,15,70);
+    color: rgb(200,200,200);
+    background-color: rgb(150,15,70);
 }
 
 .clock-analog .clock-toggle #toggle-button-show:hover{
-    border: 3px solid rgb(15,15,15);
+    background-color: rgb(25,25,15);
 }
 
 .clock-analog .button,
@@ -138,7 +147,7 @@ analog clock
 
 .clock-analog a:hover,
 .clock-analog .button:hover{
-    color: rgb(15,15,15);
+    color: rgb(25,25,15);
     opacity: 0.5;
     cursor: pointer;
 }
@@ -156,9 +165,9 @@ digital clock
     transform: translate(-50%, -50%);
     font-size: 72pt;
     font-weight: 700;
-    /* color: rgb(150,15,70); */
-    color: transparent;
-    -webkit-text-stroke: 2px rgb(15,15,15);
+    color: rgb(200,200,200);
+    /* color: transparent; */
+    -webkit-text-stroke: 2px rgb(25,25,15);
 }
 
 /*
@@ -172,17 +181,21 @@ thumbnails
     padding: 0;
     margin: 0;
     position: fixed;
-    border-radius: 100%;
-    border:1px solid rgb(15,15,15);
-    background-color: rgba(15,15,15,0.25);
     height: 25vh;
-    width: 30vh;
+    width: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 100%;
+    /* border:1px solid rgb(25,25,15); */
 }
 
 .videos figure:nth-of-type(1){
     left: 50%;
     top: 50%;
     transform:translate(-50%,-50%);
+    
 }
 
 .videos figure:nth-of-type(2){
@@ -229,15 +242,19 @@ thumbnails
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 36pt;
+    font-size: 12pt;
+    text-align: center;
+    color: rgb(150,15,70);
+    font-weight: 700;
+    text-transform: uppercase;
+    display: none;
 }
 
 .videos figure img{
-    display: none;
-    width: 100%;
+    display: block;
+    width: auto;
     height: 100%;
-    opacity: 1;
-    border-radius: 100%;
+    opacity: 0.75;
 }
 
 /*
@@ -270,9 +287,12 @@ p{
     padding: 20pt;
 }
 
-.info-page > div > div{
-    font-weight: 700;
-    text-transform: uppercase;
+.info-page details:nth-of-type(1) summary,
+.info-page details:nth-of-type(1)[open] summary,
+.info-page details:nth-of-type(1) summary:hover,
+.info-page details:nth-of-type(1)[open] summary:hover{
+    color: rgb(25,25,15);
+    border-bottom: 1px solid transparent;
 }
 
 .info-page details summary{
@@ -357,11 +377,8 @@ mobile + tablet view
         cursor: pointer;
     }
 
-    .clock-analog .clock-toggle #toggle-button-hide:hover{
-        background-color: rgb(150,15,70);
-    }
-    
+    .clock-analog .clock-toggle #toggle-button-hide:hover,
     .clock-analog .clock-toggle #toggle-button-show:hover{
-        border: 3px solid rgb(150,15,70);
+        background-color: rgb(150,15,70);
     }
 }
