@@ -402,6 +402,8 @@ footer .logo div:nth-of-type(2){
     color: rgb(150,15,70);
     border-bottom: 1px solid transparent;
     font-weight: 300;
+    position: sticky;
+    top: 40pt;
 }
 
 .info-page details[open] .credits summary:hover{
