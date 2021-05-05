@@ -465,6 +465,11 @@ mobile + tablet view
         border-bottom: 1px solid rgb(150,15,70);
     }
 
+    .info-page details[open] .credits summary:hover{
+        color: rgb(150,15,70);
+        border-bottom: 1px solid transparent;
+    }
+
     .clock-analog a:hover,
     .clock-analog .button:hover{
         color: rgb(150,15,70);
