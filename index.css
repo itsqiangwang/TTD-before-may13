@@ -28,6 +28,10 @@ a:hover,
     cursor: pointer;
 }
 
+.button span{
+    text-shadow: 0px 0px 5px rgb(200,200,200);
+}
+
 .current-page{
     color: rgb(25,25,15) !important;
 }
@@ -278,6 +282,64 @@ p{
     width: 50%;
 }
 
+button{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    margin: 0 0 20pt 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12pt;
+    letter-spacing: 0.5pt;
+}
+
+header{
+    padding-bottom: 20pt;
+    background-color: rgb(200,200,200);
+}
+
+header h1{
+    color: black;
+}
+
+header h2{
+    font-weight: 300;
+    text-transform: none;
+}
+
+footer{
+    z-index: -1;
+    position: fixed;
+    bottom: 20pt;
+}
+
+footer .logo{
+    display: flex;
+    width: 100vw;
+}
+
+footer .logo div{
+    height: 20pt;
+}
+
+footer .logo img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+footer .logo div:nth-of-type(1) img{
+    padding-right: 20pt;
+    border-right: 1px solid black;
+}
+
+footer .logo div:nth-of-type(2) img{
+    padding-left: 20pt;
+}
+
+footer .logo div:nth-of-type(2){
+    text-align: left;
+}
+
 .info-page{
     position: relative;
     z-index: 1;
@@ -285,13 +347,22 @@ p{
     padding: 20pt;
 }
 
-.info-page details:nth-of-type(1) summary,
+/* .info-page details:nth-of-type(1) summary,
 .info-page details:nth-of-type(1)[open] summary,
 .info-page details:nth-of-type(1) summary:hover,
 .info-page details:nth-of-type(1)[open] summary:hover{
     color: rgb(25,25,15);
     border-bottom: 1px solid transparent;
+} */
+
+.info-page details{
+    background-color: rgb(200,200,200);
 }
+
+/* .info-page details:nth-of-type(5){
+    padding-bottom: 15pt;
+} */
+
 
 .info-page details summary{
     font-weight: 700;
@@ -313,11 +384,31 @@ p{
     border-bottom: 1px solid rgb(150,15,70);
 }
 
-.info-page details > summary::-webkit-details-marker {
+.info-page details > summary::marker {
     display:none;
 }
 
 .info-page details > div{
+    padding: 20pt;
+}
+
+.info-page details[open] .credits details[open] summary{
+    border-bottom: 1px solid rgb(150,15,70);
+    font-weight: 700;
+}
+
+.info-page details[open] .credits summary{
+    color: rgb(150,15,70);
+    border-bottom: 1px solid transparent;
+    font-weight: 300;
+}
+
+.info-page details[open] .credits summary:hover{
+    color: rgb(25,25,15);
+    border-bottom: 1px solid rgb(150,15,70);
+}
+
+.info-page details[open] .credits p{
     padding: 20pt;
 }
 
@@ -383,5 +474,9 @@ mobile + tablet view
     .clock-analog .clock-toggle #toggle-button-hide:hover,
     .clock-analog .clock-toggle #toggle-button-show:hover{
         background-color: rgb(150,15,70);
+    }
+
+    footer .logo div{
+        height: 12pt;
     }
 }

@@ -9,6 +9,7 @@ let secondArm = document.getElementById('clock-arm-second');
 let infoButton = document.getElementById('info-button');
 let watchButton = document.getElementById('watch-button');
 let titleButton = document.getElementById('title-button');
+let homeButton = document.getElementById('home-button');
 
 //info page
 let infoPage = document.getElementById('info-page');
@@ -55,6 +56,19 @@ infoButton.onclick = function(){
 
 //when title (home) button is clicked
 titleButton.onclick = function(){
+    digitalClock.style.display = 'block';
+    videos.style.display = 'flex';
+    analogClock.style.display = 'block';
+    // knob.style.display = 'block';
+    infoPage.style.display = 'none';
+    // clockToggleHide.style.display = 'none';
+    // clockToggleShow.style.display = 'none';
+    infoButton.classList.remove('current-page');
+    titleButton.classList.add('current-page');
+    analogClock.style.opacity = '1';
+}
+
+homeButton.onclick = function(){
     digitalClock.style.display = 'block';
     videos.style.display = 'flex';
     analogClock.style.display = 'block';

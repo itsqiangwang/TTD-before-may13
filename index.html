@@ -17,15 +17,25 @@
         <div class="clock-knob" id="clock-knob"></div>
 
         <div class="clock-arm-second" id="clock-arm-second">
-            <div id="title-button" class="button current-page">Time to Dream</div>
+            <div id="title-button" class="button current-page">
+                <span>Time to Dream</span>
+            </div>
         </div>
 
         <div class="clock-arm-minute" id="clock-arm-minute">
-            <a id="watch-button" class="button" href="https://us02web.zoom.us/j/95273164789" target="_blank">Watch</a>
+            <a id="watch-button" class="button" href="https://ucla.zoom.us/j/93855171834" target="_blank">
+                <span>
+                    Watch
+                </span>
+            </a>
         </div>
 
         <div class="clock-arm-hour" id="clock-arm-hour">
-            <div id="info-button" class="button">Info</div>
+            <div id="info-button" class="button">
+                <span>
+                    Info
+                </span>
+            </div>
         </div>
 
         <!-- <div class="clock-toggle" id="clock-toggle">
@@ -38,15 +48,15 @@
         </div> -->
     </nav>
 
-    <main class="clock-digital" id="clock-digital">
-            <div>
-                <span id="month">05</span>.<span id="date">13</span>.<span id="year">21</span>
-            </div>
+    <section class="clock-digital" id="clock-digital">
+        <div>
+            <span id="month">05</span>.<span id="date">13</span>.<span id="year">21</span>
+        </div>
 
-            <div>
-                <span id="hour">18</span>:<span id="minute">00</span>:<span id="second">00</span>
-            </div>
-    </main>
+        <div>
+            <span id="hour">18</span>:<span id="minute">00</span>:<span id="second">00</span>
+        </div>
+    </section>
 
     <section class="videos" id="videos">
         <figure>
@@ -100,14 +110,16 @@
     </section>
 
     <section class="info-page" id="info-page">
-        <details open>
-            <summary>
-                Time to Dream: A collection of short films by Marianna Varviani
-            </summary>
-            Presented by the UCLA World Arts and Cultures/Dance MFA Upstarts Series
-        </details>
+        <button class="button" id="home-button">
+            &lt;&lt;&lt;
+        </button>
 
-        <br>
+        <header>
+            <h1>Time to Dream: A collection of short dance films by Marianna Varviani</h1>
+            <h2>
+                Presented by the UCLA World Arts and Cultures/Dance MFA Upstarts Series
+            </h2>
+        </header>
 
         <details>
             <summary class="button">
@@ -128,29 +140,61 @@
 
         <details>
             <summary class="button">
+                About the Project
+            </summary>
+            <div>
+                <p>
+                    <i>Time to dream</i> is a collection of short dance films that acknowledges oppressive forces of the
+                    past and
+                    present, in order to envision a better future.
+                    <br><br>
+                    This project was created during the global pandemic, while racially driven crimes and social
+                    injustices
+                    were openly broadcasted, showing the depth of a flawed system. In the hope of change, we work with
+                    ideas
+                    of group dynamics, oppression, and liberation within our bodies. Snapshots of individual journeys,
+                    of
+                    people trying to come together, to re-evaluate and reshape their ways in order to achieve peace,
+                    freedom, and joy.
+                </p>
+            </div>
+        </details>
+
+        <details>
+            <summary class="button">
                 Choreographer's Note
             </summary>
             <div>
                 <p>
-                    <i>Time to Dream</i> was created during a global pandemic, while racial driven crimes and social
-                    injustices were openly broadcasted, showing the depth of this flawed system.
-                    <br><br>
-                    During this challenging and constantly fluctuating time, I found hope in the future. Trying to use
-                    the re-shaping journey, I thought that one way to create and experience a better future is by
-                    firstly imagining it. The first step of creating something different, could be to open our
-                    minds/thoughts/energy beyond the current principles, structures, beliefs, ways.
-                    <br><br>
-                    <i>Time to Dream</i> reflects exactly this probability. Everything is possible in the opening period
-                    after a shift.
-                    <br><br>
-                    In creating change, and finding freedom we also need to understand and acknowledge what has already
-                    been done. How can we unburden a body that is still partially in confinement?
-                    <br><br>
+                    <i>Time to Dream</i> was created during the COVID-19 global pandemic, while racially-driven crimes
+                    and
+                    social injustices were openly broadcast, exposing further our deeply flawed systems.
+                    <br>
+                    <br>
+                    During this challenging and constantly fluctuating time, I found hope in the future. I thought that
+                    one way to start to create and re-shape a better future would be to imagine it.
+                    <br>
+                    <br>
+                    <i>Time to Dream</i> represents some possibilities that are revealed when we acknowledge current
+                    challenges, structures and beliefs, and make way for new ways of thinking and being.
+                    <br>
+                    <br>
+                    In creating change and finding freedom we also need to recognize what has already been done. How can
+                    we unburden a body that is still confined?
+                    <br>
+                    <br>
                     Most of our kinetic research was based on oppositions such as tension and release, external and
-                    internal forces and textures, gestures, as well as feelings and images of complexity.
-                    <br><br>
-                    In order to bridge the past and the future, I thought of tipping into a dreamy state, a subconscious mystical
-                    mixture of elements.
+                    internal forces, as well as feelings and images of complexity.
+                    <br>
+                    <br>
+                    In order to bridge the past and the future, I thought of tipping into a dreamy state, a subconscious
+                    mystical mixture of elements that could open up a new awareness.
+                    <br>
+                    <br>
+                    With this collection of short films, we wanted to honor individual journeys that attune to a wave of
+                    change. In reality, <i>Time to Dream</i> starts after our last film <i>Time to Begin</i>, giving the
+                    chance to
+                    each and every one of us to envision a different future.
                 </p>
             </div>
         </details>
@@ -160,22 +204,160 @@
                 Credits
             </summary>
 
-            <div>
+            <div class="credits">
+                <div>
+                    <h2>
+                        Choreographer
+                    </h2>
+                    <details>
+                        <summary class="button">
+                            Marianna Varviani
+                        </summary>
+                        <p>
+                            Marianna Varviani was born in Athens, Greece. She has worked in the U.K., Brazil,
+                            Greece, Spain and U.S.A. as an actress, choreographer, dancer, director and instructor.
+                            In 2016 she founded ‘Selcouth’. Marianna graduated from Eat15 Drama
+                            school/University of Essex in Contemporary theatre in 2007. She is a UCLA fellow in the
+                            Department of World Arts and Cultures/Dance. She has choreographed ‘Vortex’,
+                            ‘Ahtikos_ a dance of liberation’, ‘Phoenix_ rising from the ashes’ and ‘Time to Dream’ a
+                            series of 7 dance films. Her works have been presented at the ‘Arc for dance festival’,
+                            ‘Our festival’, ‘European Dance Network’ as well as theaters in Greece, U.K. and, U.S.A.
+                        </p>
+                    </details>
+                </div>
+
+                <br>
+
                 <div>
                     <h2>
                         Creative Collaborators
                     </h2>
-                    <div>
-                        Miel Lei Apostol<br>
-                        Lane Fricke<br>
-                        Alexis Iritani<br>
-                        Tyler Law<br>
-                        Obiageli Ogbodo<br>
-                        Maya Peterson<br>
-                        Maasai Piliavin-Godwin<br>
-                        Sophie Poe<br>
-                        Bella Stenvall
-                    </div>
+                    <details>
+                        <summary class="button">
+                            Miel Lei Apostol
+                        </summary>
+                        <p>
+                            Miel Lei Apostol is originally from the Philippines, her background in dance technique
+                            consists of ballet and jazz, but highly focuses on modern, contemporary, hip hop, and
+                            improvisation. She has received many awards at Moorpark College in both dance and academia.
+                            Miel Lei transferred to UCLA with honors and earned the Tane Memorial Award for her skills
+                            in leadership, organization, and connecting her community with passion.
+                            After transferring with Associate Degrees in Biological Sciences, Chemistry, Dance, and
+                            General Studies: Natural Science, Miel Lei is pursuing her BA in dance and is double
+                            minoring in Visual and Performing Arts Education and Theater at UCLA.
+
+                        </p>
+                    </details>
+                    <details>
+                        <summary class="button">
+                            Lane Fricke
+                        </summary>
+                        <p>
+                            Lane Fricke grew up in San Francisco, training in ballet and modern dance. She is a dance
+                            major at UCLA and has been involved in WACSmash (a student-choreographed and
+                            student-organized show), a virtual piece called When is Good (choreographed by Faye
+                            Driscoll), and has made a few short dance films. She has fallen in love with improvisation
+                            work and techniques, and values dance and movement practices as an appreciation and love of
+                            the human body. She enjoys fluid, rounded movement best and strives to achieve a sense of
+                            flow in her movement practice.
+                        </p>
+                    </details>
+                    <details>
+                        <summary class="button">
+                            Alexis Iritani
+                        </summary>
+                        <p>
+                            Alexis is currently a fourth year majoring in Dance and minoring in Food Studies. At her
+                            time at UCLA she was grateful to participate in multiple performance spaces including WAC/D
+                            Faculty Pieces, a Senior Project, four years of Wacsmash, and Marianna's MFA piece among
+                            others. Her other campus involvements include being a director for Icarus Contemporary Dance
+                            Company and volunteer teaching youth with UCLA's Movement Exchange. She aspires to continue
+                            creating and choreographing in her future endeavors, and is excited to see where her next
+                            steps lead!
+                        </p>
+                    </details>
+                    <details>
+                        <summary class="button">
+                            Tyler Law
+                        </summary>
+                        <p>
+                            Tyler Law is a Dance Major and Film, Television, and Digital Media Minor at UCLA. She grew
+                            up doing Chinese dance and ballet before discovering her love for hip hop and street-style
+                            choreography. She also participated in choir and theater throughout high school. Her
+                            involvement with UCLA’s institutional-level performance and study opportunities graciously
+                            provided her the chance to further explore the arts – a field she is very passionate about.
+                            This is her second project with Marianna, and she would like to thank Marianna and her peers
+                            for their support throughout this process. Despite difficult circumstances complicating the
+                            creation of this piece, Time To Dream is nevertheless a reflection of dedication,
+                            discipline, and hope.
+                        </p>
+                    </details>
+                    <details>
+                        <summary class="button">
+                            Obiageli Ogbodo
+                        </summary>
+                        <p>
+                            Obiageli (Oby) Ogbodo is a fourth-year student at the University of
+                            California, Los Angeles. She is currently studying World Art and
+                            Cultures Dance and Global Health. Prior to attending UCLA, Oby
+                            attended Saint Mary’s College of California where she studied
+                            Psychology with a concentration in Neuroscience while actively
+                            participating as a dancer for students in the MFA program. In relation
+                            to her personal dance history, she has practiced dance all throughout
+                            her childhood up until now, and her dance vocabulary is heavily
+                            influenced by various African dance practices in correspondence with
+                            her Nigerian heritage. After UCLA, Oby plans to pursue a career in
+                            health after the completion of her degree, as well as continue to use
+                            her movement practices as a way of informing her knowledge of how
+                            bodies move and well-being.
+                        </p>
+                    </details>
+                    <details>
+                        <summary class="button">
+                            Maya Peterson
+                        </summary>
+                        <p>
+                            Maya Peterson is currently a third-year Dance major and Cognitive Science and Film &
+                            Television double minor at UCLA. She started dancing at the Performing Arts Center in Van
+                            Nuys, California at the age of two, where she trained in the genres of ballet, jazz, tap,
+                            and modern. She has also been a part of the Musical Theater and Dance Departments throughout
+                            her years in middle and high school. Upon her acceptance into the WAC/D Department at UCLA,
+                            she has begun to delve more into contemporary styles of dance as well as the practice of
+                            choreographing.
+                        </p>
+                    </details>
+                    <details>
+                        <summary class="button">
+                            Maasai Piliavin-Godwin
+                        </summary>
+                        <p>
+                            Maasai Godwin is a graduating senior in the World Arts and Cultures/Dance program. She began
+                            dancing at 3 years old, and from ages 7 to 17 trained professionally at the Debbie Allen
+                            Dance Academy in over 8 different techniques including, ballet, modern, Horton, Graham, hip
+                            hop, West African, tap, jazz, flamenco, and Dunham. She is graduating with a double major in
+                            Dance and African American studies and aims to use both her degrees to continue to create
+                            art that is both culturally informed, and socially significant.
+                        </p>
+                    </details>
+                    <details>
+                        <summary class="button">
+                            Sophie Poe
+                        </summary>
+                        <p>
+                            Sophie Poe is a student at UCLA.
+                        </p>
+                    </details>
+                    <details>
+                        <summary class="button">
+                            Bella Stenvall
+                        </summary>
+                        <p>
+                            Bella Stenvall is a current senior at UCLA, pursuing a Bachelor of Arts in Dance and Arabic
+                            along with a minor in Global Studies. In her free time, Bella enjoys dance parties, cooking
+                            elaborate meals, and exploring LA. She aspires to work in foreign service and eventually
+                            earn a J.D. in international law.
+                        </p>
+                    </details>
                 </div>
 
                 <br>
@@ -184,9 +366,14 @@
                     <h2>
                         Composer
                     </h2>
-                    <div>
-                        Yifeng Yuan
-                    </div>
+                    <details>
+                        <summary class="button">
+                            Yifeng Yuan
+                        </summary>
+                        <p>
+                            Yifeng Yvonne Yuan (b. 1996) is a graduate student at UCLA's Herb Alpert School of Music.
+                        </p>
+                    </details>
                 </div>
 
                 <br>
@@ -195,10 +382,36 @@
                     <h2>
                         Costume designers
                     </h2>
-                    <div>
-                        Eva Zapata<br>
-                        Shelby Wilcox
-                    </div>
+                    <details>
+                        <summary class="button">
+                            Eva Zapata
+                        </summary>
+                        <p>
+                            Eva Zapata is an interdisciplinary scholar and practitioner involved in research and
+                            artistic innovative projects at the University of California, Los Angeles. After years
+                            working in Russian media, Eva relocated to the United States to focus on topics in
+                            theatrical production, design, and development. For over ten years she has been working with
+                            experimental costuming, incorporating wearable electronics and non-traditional materials
+                            into garments and accessories for live performance. Eva’s credits include costume design for
+                            Snapchat Cheerleader lens, designing projections for modern interpretations of Shakespeare’s
+                            plays, designing costumes for experimental dance performances and theatrical productions in
+                            the greater Los Angeles area.
+                        </p>
+                    </details>
+                    <details>
+                        <summary class="button">
+                            Shelby Wilcox
+                        </summary>
+                        <p>
+                            Shelby is a Costume Designer and Maker. Shelby started her costuming journey by sewing
+                            clothing for her stuffed animals to enhance the stories she created with her friends. Now
+                            Shelby is a senior bachelor's student at UCLA's School of Theater, Film, and Television,
+                            Studying Costume Design and Construction. Shelby has designed for TFT first-year masters
+                            student short film and design-assisted for Maeve Kiely on a production of Into the Woods in
+                            Ventura. After this project, she is looking forward to her summer apprenticeship, where she
+                            will be moving to Santa Fe and creating hats for Santa Fe Opera's summer season.
+                        </p>
+                    </details>
                 </div>
 
                 <br>
@@ -207,9 +420,24 @@
                     <h2>
                         Videographer
                     </h2>
-                    <div>
-                        Filippos Tsapekis
-                    </div>
+                    <details>
+                        <summary class="button">
+                            Filippos Tsapekis
+                        </summary>
+                        <p>
+                            Filippos is an award-winning film and commercial director and video editor based in Los
+                            Angeles, originally from Athens, Greece. He started his career as a copywriter. As a
+                            director, he has directed more than 20 projects for multiple international clients,
+                            including TV commercials, short films, music videos, promotional videos, and more. He has
+                            been behind the scenes more than 50 memorable ads in Europe over the past decade.
+                            Filippos' academic experience includes a Bachelor's degree in Communication and Advertising
+                            at the American College of Greece, a One-year Filmmaking program, and a Master's degree in
+                            Filmmaking at the New York Film Academy in Los Angeles.
+                            His latest short film Nine to Five presented to American students at Yale and New York
+                            University. It is also available via Dust TV on Apple Tv, Samsung Tv plus, Roku channel,
+                            Xumo, Vizio, IMDB Tv, Xfinity stream.
+                        </p>
+                    </details>
                 </div>
 
                 <br>
@@ -218,9 +446,15 @@
                     <h2>
                         Graphic Designer
                     </h2>
-                    <div>
-                        Qiang Wang
-                    </div>
+                    <details>
+                        <summary class="button">
+                            Qiang Wang
+                        </summary>
+                        <p>
+                            Qiang Wang is a graphic designer making identity systems, printed matters, and interactive
+                            projects.
+                        </p>
+                    </details>
                 </div>
 
                 <br>
@@ -229,10 +463,36 @@
                     <h2>
                         Production Assistants
                     </h2>
-                    <div>
-                        Annie Kahane<br>
-                        Stephanie Singh
-                    </div>
+                    <details>
+                        <summary class="button">
+                            Annie Kahane
+                        </summary>
+                        <p>
+                            Annie Kahane is a first year MFA student in Choreographic Inquiry at UCLA, and the Artistic
+                            Director of the interdisciplinary performance group Alive & Well Productions. She is the
+                            recipient of two awards from the Zellerbach Family Foundation and a Rainin Opportunity Fund
+                            Award, a program of the Kenneth Rainin Foundation and ODC Theater. Her poetry has been
+                            featured on San Francisco & Chicago Public Radio stations and she is the author of the
+                            poetry chapbook No Time Like the Present to Be, which was sold to raise money for Youth
+                            Speaks, an organization that offers free writing programs to teens in the San Francisco Bay
+                            Area.
+                        </p>
+                    </details>
+                    <details>
+                        <summary class="button">
+                            Stephanie Singh
+                        </summary>
+                        <p>
+                            Stephanie Singh is a first year student at UCLA working towards a B.A. in Dance. Her
+                            background focuses mainly on tap, jazz, ballet, acrobatics, contemporary, and hip hop dance
+                            as she grew up dancing at her home studio in Portland, Oregon. Alongside her education at
+                            UCLA, she is also currently training with the international tap dance company, Sole Talk
+                            Youth. To compliment her dance training, Stephanie also has a passion for photography and
+                            film and would like to thank Marianna for the wonderful opportunity to get first hand
+                            experience with the productional aspects of creating Time To Dream. After UCLA, Stephanie
+                            plans to pursue a career in both professional dance, film, and photography.
+                        </p>
+                    </details>
                 </div>
 
                 <br>
@@ -284,24 +544,36 @@
             </summary>
             <div>
                 <p>
-                    <h2>SELCOUTH</h2>
-                    (adj.) Unfamiliar, Strange and yet marvelous.
+                <p>
+                    Selcouth is the platform that produces the work of Marianna Varviani and collaborators.
                     <br><br>
-                    <p>
                     We believe art can change the world! We create works to invoke, empower, and inspire the people
                     around us. Our core ideals revolve around understanding, appreciation, respect, and liberation. We
                     create, produce, and share high-quality performances and interactive art experiences, based on
-                    contemporary issues.
-                    </p>
-                    <br><br>
-                    <a href="https://www.selcouth.info" target="_blank" class="button">www.selcouth.info</a>
-                    <br>
-                    <a href="mailto:contact@selcouth.info" target="_blank" class="button">contact@selcouth.info</a>
-                    <br>
-                    <a href="mailto:marianna.varviani@gmail.com" target="_blank" class="button">marianna.varviani@gmail.com</a>
+                    contemporary issues. We invite audiences of all backgrounds, ages, and interests. Through our
+                    project, we hope to bridge concert, street, commercial and academic cultures.
+                </p>
+                <br>
+                <a href="https://www.selcouth.info" target="_blank" class="button">www.selcouth.info</a>
+                <br>
+                <a href="mailto:contact@selcouth.info" target="_blank" class="button">contact@selcouth.info</a>
+                <br>
+                <a href="mailto:marianna.varviani@gmail.com" target="_blank"
+                    class="button">marianna.varviani@gmail.com</a>
                 </p>
             </div>
         </details>
+
+        <footer>
+            <div class="logo">
+                <div>
+                    <img src="media/logo-1.png">
+                </div>
+                <div>
+                    <img src="media/logo-2.png">
+                </div>
+            </div>
+        </footer>
     </section>
 
     <script src="index.js"> </script>
