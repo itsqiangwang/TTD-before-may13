@@ -384,7 +384,8 @@ footer .logo div:nth-of-type(2){
     border-bottom: 1px solid rgb(150,15,70);
 }
 
-.info-page details > summary::marker {
+.info-page details > summary::marker,
+.info-page details > summary::-webkit-details-marker{
     display:none;
 }
 
