@@ -29,7 +29,7 @@ a:hover,
 }
 
 .button span{
-    text-shadow: 0px 0px 5px rgb(200,200,200);
+    text-shadow: 0px 0.5px 1px rgb(200,200,200);
 }
 
 .current-page{
@@ -40,6 +40,28 @@ a:hover,
     opacity: 1 !important;
     cursor: text !important;
 }
+
+/*
+home header
+*/
+.home-header{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20pt;
+    text-shadow: 0px 0.5px 1px rgb(200,200,200);
+}
+
+.home-header h1,
+.home-header h2{
+    color: black;
+}
+
+.home-header h2{
+    font-weight: 300;
+    text-transform: none;
+}
+
 
 /*
 analog clock
@@ -105,7 +127,7 @@ analog clock
     white-space: nowrap;
 }
 
-/* .clock-analog .clock-toggle div{
+.clock-analog .clock-toggle div{
     border-radius: 100%;
     padding: 5pt;
     position: fixed;
@@ -137,7 +159,7 @@ analog clock
 
 .clock-analog .clock-toggle #toggle-button-show:hover{
     background-color: rgb(25,25,15);
-} */
+}
 
 .clock-analog .button,
 .clock-analog a{
@@ -256,7 +278,7 @@ thumbnails
     display: block;
     width: auto;
     height: 100%;
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 /*
@@ -282,7 +304,7 @@ p{
     width: 50%;
 }
 
-button{
+.info-page button{
     outline: none;
     background-color: transparent;
     border: none;
@@ -291,6 +313,12 @@ button{
     font-family: 'Roboto Mono', monospace;
     font-size: 12pt;
     letter-spacing: 0.5pt;
+    position: fixed;
+    top: 20pt;
+}
+
+.info-page button span{
+    font-size: 16pt;
 }
 
 header{
@@ -310,16 +338,20 @@ header h2{
 footer{
     z-index: -1;
     position: fixed;
-    bottom: 20pt;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
 }
 
 footer .logo{
-    display: flex;
-    width: 100vw;
+    padding-bottom: 20pt;
 }
 
 footer .logo div{
     height: 20pt;
+    display: inline-block;
 }
 
 footer .logo img{
@@ -470,6 +502,11 @@ mobile + tablet view
     .info-page details[open] .credits summary:hover{
         color: rgb(150,15,70);
         border-bottom: 1px solid transparent;
+    }
+
+    .info-page button{
+        position: relative;
+        top: 0;
     }
 
     .clock-analog a:hover,
