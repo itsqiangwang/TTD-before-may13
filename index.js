@@ -151,7 +151,12 @@ function clockDigital() {
     secondSpan.textContent = ("0" + second).substr(-2);
 }
 // call after may 13 (live digital clock)
-// setInterval(clockDigital, 1);
+setInterval(clockDigital, 1);
+
+//alert
+function comingSoon(){
+    alert("Coming Soon!");
+}
 
 // console.log('year:' + year);
 // console.log('month:' + month);
