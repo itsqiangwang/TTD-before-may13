@@ -336,7 +336,6 @@ header h2{
 }
 
 footer{
-    z-index: -1;
     position: fixed;
     bottom: 20pt;
     right: 0;
@@ -380,7 +379,7 @@ footer{
     color: rgb(150,15,70);
     list-style: none;
     position: sticky;
-    top: 20pt;
+    top: 60pt;
     border-bottom: 1px solid transparent;
     outline: none;
 }
@@ -413,7 +412,7 @@ footer{
     border-bottom: 1px solid transparent;
     font-weight: 300;
     position: sticky;
-    top: 40pt;
+    top: 80pt;
 }
 
 .info-page details[open] .credits summary:hover{
@@ -471,6 +470,14 @@ mobile + tablet view
         border-bottom: 1px solid transparent;
         color: rgb(150,15,70);
         opacity: 1;
+    }
+
+    .info-page details summary{
+        top: 20pt;
+    }
+
+    .info-page details[open] .credits summary{
+        top: 40pt;
     }
 
     .info-page details[open] summary:hover{
