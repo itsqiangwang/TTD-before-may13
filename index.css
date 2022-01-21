@@ -313,8 +313,6 @@ p{
     font-family: 'Roboto Mono', monospace;
     font-size: 12pt;
     letter-spacing: 0.5pt;
-    position: fixed;
-    top: 20pt;
 }
 
 .info-page button span{
@@ -379,7 +377,7 @@ footer{
     color: rgb(150,15,70);
     list-style: none;
     position: sticky;
-    top: 60pt;
+    top: 20pt;
     border-bottom: 1px solid transparent;
     outline: none;
 }
@@ -412,7 +410,7 @@ footer{
     border-bottom: 1px solid transparent;
     font-weight: 300;
     position: sticky;
-    top: 80pt;
+    top: 40pt;
 }
 
 .info-page details[open] .credits summary:hover{
@@ -471,15 +469,7 @@ mobile + tablet view
         color: rgb(150,15,70);
         opacity: 1;
     }
-
-    .info-page details summary{
-        top: 20pt;
-    }
-
-    .info-page details[open] .credits summary{
-        top: 40pt;
-    }
-
+    
     .info-page details[open] summary:hover{
         border-bottom: 1px solid rgb(150,15,70);
     }
@@ -487,11 +477,6 @@ mobile + tablet view
     .info-page details[open] .credits summary:hover{
         color: rgb(150,15,70);
         border-bottom: 1px solid transparent;
-    }
-
-    .info-page button{
-        position: relative;
-        top: 0;
     }
 
     .clock-analog a:hover,
