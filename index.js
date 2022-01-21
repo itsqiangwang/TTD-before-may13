@@ -129,6 +129,7 @@ setInterval(clockAnlog, 1);
 // function to animate digital clock
 
 let yearSpan = document.getElementById('year');
+let copyrightYear = document.getElementById('copyrightYear');
 let monthSpan = document.getElementById('month');
 let dateSpan = document.getElementById('date');
 let hourSpan = document.getElementById('hour');
@@ -138,12 +139,14 @@ let secondSpan = document.getElementById('second');
 function clockDigital() {
     let d = new Date();
     let year = d.getFullYear() - 2000;
+    let cyear = d.getFullYear();
     let month = d.getMonth() + 1;
     let date = d.getDate();
     let hour = d.getHours();
     let minute = d.getMinutes();
     let second = d.getSeconds();
     yearSpan.textContent = ("0" + year).substr(-2);
+    copyrightYear.textContent = cyear;
     monthSpan.textContent = ("0" + month).substr(-2);
     dateSpan.textContent = ("0" + date).substr(-2);
     hourSpan.textContent = ("0" + hour).substr(-2);

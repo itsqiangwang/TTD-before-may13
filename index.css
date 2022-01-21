@@ -338,38 +338,11 @@ header h2{
 footer{
     z-index: -1;
     position: fixed;
-    bottom: 0;
+    bottom: 20pt;
     right: 0;
     left: 0;
     width: 100%;
     text-align: center;
-}
-
-footer .logo{
-    padding-bottom: 20pt;
-}
-
-footer .logo div{
-    height: 20pt;
-    display: inline-block;
-}
-
-footer .logo img{
-    max-height: 100%;
-    max-width: 100%;
-}
-
-footer .logo div:nth-of-type(1) img{
-    padding-right: 20pt;
-    border-right: 1px solid black;
-}
-
-footer .logo div:nth-of-type(2) img{
-    padding-left: 20pt;
-}
-
-footer .logo div:nth-of-type(2){
-    text-align: left;
 }
 
 .info-page{
@@ -377,6 +350,11 @@ footer .logo div:nth-of-type(2){
     z-index: 1;
     display: none;
     padding: 20pt;
+}
+
+.info-page ul{
+    list-style: none;
+    margin: 0;
 }
 
 /* .info-page details:nth-of-type(1) summary,
@@ -387,9 +365,9 @@ footer .logo div:nth-of-type(2){
     border-bottom: 1px solid transparent;
 } */
 
-.info-page details{
+/* .info-page details{
     background-color: rgb(200,200,200);
-}
+} */
 
 /* .info-page details:nth-of-type(5){
     padding-bottom: 15pt;
@@ -519,9 +497,5 @@ mobile + tablet view
     .clock-analog .clock-toggle #toggle-button-hide:hover,
     .clock-analog .clock-toggle #toggle-button-show:hover{
         background-color: rgb(150,15,70);
-    }
-
-    footer .logo div{
-        height: 12pt;
     }
 }
